@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "78252f2c-7827-4ccd-b0b5-606ee81c803e",
+		"name": "Petshop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Fornecedores",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post Fornecedor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"empresa\": \"Alura Ração para Gatos\",\n    \"email\": \"vendas@alura.petshop\",\n    \"categoria\": \"ração\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/fornecedores/",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fornecedores",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get id fornecedor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/api/fornecedores/3",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fornecedores",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Alterar Fornecedor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:3000/api/fornecedores/2",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"fornecedores",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
